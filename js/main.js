@@ -125,4 +125,23 @@ $(document).ready(function () {
       input.prop('disabled', false)
     })
   })
+
+
+  //accordion menu for toggle switch
+  $('.icon').click(function(){
+    console.log('success');
+    $('.accordion-wrapper').slideToggle();
+  });
+
+  $('.arrow-btn').click(function(){
+    console.log('success');
+    $('.accordion-wrapper').slideToggle();
+  });
+
 })
+
+
+
+
+
+
