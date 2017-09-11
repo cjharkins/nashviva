@@ -104,7 +104,7 @@ $(document).ready(function () {
     let id = dataset.name.toLowerCase().split(' ').join('-')
     li.innerHTML = `
       <input type="checkbox" disabled id=${id} name="${id}" class="switch"/>
-      <label for="${id}">${dataset.name}</label>
+      <label for="${id}"><span class="label-name">${dataset.name}</span></label>
     `
     toggleList.appendChild(li)
     // Retreive data
@@ -133,10 +133,12 @@ $(document).ready(function () {
     $('.accordion-wrapper').slideToggle();
   });
 
-  $('.arrow-btn').click(function(){
+  $('.accordion-arrow-btn').click(function(){
     console.log('success');
     $('.accordion-wrapper').slideToggle();
   });
+
+
 
 })
 
