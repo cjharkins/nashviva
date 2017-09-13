@@ -116,6 +116,9 @@ svg:active {
     overflow: hidden;
   }
 
+  header {
+    background: white;
+  }
   #footer {
     height: 100vh;
     width: 20%;
