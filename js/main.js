@@ -129,13 +129,23 @@ $(document).ready(function () {
 
   //accordion menu for toggle switch
   $('.icon').click(function(){
-    console.log('success');
-    $('.accordion-wrapper').slideToggle();
+    if (window.matchMedia("(min-width : 768px)").matches) {
+      console.log('success on if');
+      $('.accordion-wrapper').animate({width:"toggle"},500);
+    } else {
+      console.log('success on else');
+      $('.accordion-wrapper').slideToggle();
+    }
   });
 
   $('.accordion-arrow-btn').click(function(){
-    console.log('success');
-    $('.accordion-wrapper').slideToggle();
+    if (window.matchMedia("(min-width : 768px)").matches) {
+      console.log('success on if');
+      $('.accordion-wrapper').animate({width:"toggle"},500);
+    } else {
+      console.log('success on else');
+      $('.accordion-wrapper').slideToggle();
+    }
   });
 
 
